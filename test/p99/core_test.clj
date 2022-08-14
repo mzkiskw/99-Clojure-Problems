@@ -150,15 +150,15 @@
    (is (= (reverse-a-sequence-solution [[1 2][3 4][5 6]]) [[5 6][3 4][1 2]])))
 
 
-; ;; problem 24
-; (deftest can-sum-it-all-up
-;   (is (= (sum-it-all-up-solution [1 2 3]) 6))
-;   (is (= (sum-it-all-up-solution (list 0 -2 5 5)) 8))
-;   (is (= (sum-it-all-up-solution #{4 2 1}) 7))
-;   (is (= (sum-it-all-up-solution '(0 0 -1)) -1))
-;   (is (= (sum-it-all-up-solution '(1 10 3)) 14)))
-;
-;
+ ;; problem 24
+ (deftest can-sum-it-all-up
+   (is (= (sum-it-all-up-solution [1 2 3]) 6))
+   (is (= (sum-it-all-up-solution (list 0 -2 5 5)) 8))
+   (is (= (sum-it-all-up-solution #{4 2 1}) 7))
+   (is (= (sum-it-all-up-solution '(0 0 -1)) -1))
+   (is (= (sum-it-all-up-solution '(1 10 3)) 14)))
+
+
 ; ;; problem 25
 ; (deftest can-find-the-odd-numbers
 ;   (is (= (find-the-odd-numbers-solution #{1 2 3 4 5}) '(1 3 5)))

@@ -199,9 +199,13 @@
 
 ;; problem 24 (Easy)
 (defn sum-it-all-up-solution
-  [& args] ;; update args as needed
+  [l]
   ;; Write a function which returns the sum of a sequence of numbers.
-  nil)
+  (loop [l l ans 0]
+    (if (< (count l) 1)
+      ans
+      (recur (rest l) (+ ans (first l))))
+    ))
 
 
 ;; problem 25 (Easy)
