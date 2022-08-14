@@ -117,9 +117,9 @@
 
 ;; problem 16 (Elementary)
 (defn hello-world-solution
-  [& args] ;; update args as needed
+  [name] ;; update args as needed
   ;; Write a function which returns a personalized greeting.
-  nil)
+  (str "Hello, " name "!"))
 
 
 ;; problem 17 (Elementary)

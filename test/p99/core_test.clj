@@ -95,13 +95,13 @@
    (is (= (double-down-solution 7) 14)))
 
 
-; ;; problem 16
-; (deftest can-hello-world
-;   (is (= (hello-world-solution "Dave") "Hello, Dave!"))
-;   (is (= (hello-world-solution "Jenn") "Hello, Jenn!"))
-;   (is (= (hello-world-solution "Rhea") "Hello, Rhea!")))
-;
-;
+ ;; problem 16
+ (deftest can-hello-world
+   (is (= (hello-world-solution "Dave") "Hello, Dave!"))
+   (is (= (hello-world-solution "Jenn") "Hello, Jenn!"))
+   (is (= (hello-world-solution "Rhea") "Hello, Rhea!")))
+
+
 ; ;; problem 17
 ; (deftest can-sequences-map
 ;   (is (= sequences-map-solution (map #(+ % 5) '(1 2 3)))))
