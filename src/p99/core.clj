@@ -110,9 +110,9 @@
 
 ;; problem 15 (Elementary)
 (defn double-down-solution
-  [& args] ;; update args as needed
+  [val] ;; update args as needed
   ;; Write a function which doubles a number.
-  nil)
+  (* val 2))
 
 
 ;; problem 16 (Elementary)
