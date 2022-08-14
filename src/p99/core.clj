@@ -99,7 +99,7 @@
 (def sequences-rest-solution
   ;; The rest function will return all the items of a sequence except the
   ;; first.
-  nil)
+  [20 30 40])
 
 
 ;; problem 14 (Elementary)
