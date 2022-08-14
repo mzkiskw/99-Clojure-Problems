@@ -37,7 +37,7 @@
 ;; problem 4 (Elementary)
 (def intro-to-lists-solution
   ;; Lists can be constructed with either a function or a quoted form.
-  nil)
+  (list :a :b :c))
 
 
 ;; problem 5 (Elementary)

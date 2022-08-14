@@ -21,11 +21,12 @@
    (is (= intro-to-strings-solution (.toUpperCase "hello world"))))
 
 
-; ;; problem 4
-; (deftest can-intro-to-lists
-;   (is (= (list intro-to-lists-solution) '(:a :b :c))))
-;
-;
+ ;; problem 4
+ (deftest can-intro-to-lists
+   (is (= intro-to-lists-solution '(:a :b :c))))
+; は？
+
+
 ; ;; problem 5
 ; (deftest can-lists-conj
 ;   (is (= lists-conj-solution (conj '(2 3 4) 1)))
