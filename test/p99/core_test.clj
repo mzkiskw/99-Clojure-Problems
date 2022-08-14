@@ -102,11 +102,11 @@
    (is (= (hello-world-solution "Rhea") "Hello, Rhea!")))
 
 
-; ;; problem 17
-; (deftest can-sequences-map
-;   (is (= sequences-map-solution (map #(+ % 5) '(1 2 3)))))
-;
-;
+ ;; problem 17
+ (deftest can-sequences-map
+   (is (= sequences-map-solution (map #(+ % 5) '(1 2 3)))))
+
+
 ; ;; problem 18
 ; (deftest can-sequences-filter
 ;   (is (= sequences-filter-solution (filter #(> % 5) '(3 4 5 6 7)))))
