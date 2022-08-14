@@ -63,7 +63,7 @@
 ;; problem 8 (Elementary)
 (def intro-to-sets-solution
   ;; Sets are collections of unique values.
-  nil)
+  #{:a :b :c :d})
 
 
 ;; problem 9 (Elementary)
