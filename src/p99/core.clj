@@ -309,10 +309,9 @@
 
 
 ;; problem 35 (Elementary)
-(defn local-bindings-solution
-  [& args] ;; update args as needed
+(def local-bindings-solution
   ;; Clojure lets you give local names to values using the special let-form.
-  nil)
+  7)
 
 
 ;; problem 36 (Elementary)

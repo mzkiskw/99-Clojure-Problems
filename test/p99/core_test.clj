@@ -237,13 +237,13 @@
    (is (= (implement-range-solution 5 8) '(5 6 7))))
 
 
-; ;; problem 35
-; (deftest can-local-bindings
-;   (is (= local-bindings-solution (let [x 5] (+ 2 x))))
-;   (is (= local-bindings-solution (let [x 3, y 10] (- y x))))
-;   (is (= local-bindings-solution (let [x 21] (let [y 3] (/ x y))))))
-;
-;
+ ;; problem 35
+ (deftest can-local-bindings
+   (is (= local-bindings-solution (let [x 5] (+ 2 x))))
+   (is (= local-bindings-solution (let [x 3, y 10] (- y x))))
+   (is (= local-bindings-solution (let [x 21] (let [y 3] (/ x y))))))
+
+
 ; ;; problem 36
 ; (deftest can-let-it-be
 ;   (is (= 10 (let let-it-be-solution (+ x y))))
