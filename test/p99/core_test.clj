@@ -33,11 +33,12 @@
    (is (= lists-conj-solution (conj '(3 4) 2 1))))
 
 
-; ;; problem 6
-; (deftest can-intro-to-vectors
-;   (is (= [intro-to-vectors-solution] (list :a :b :c) (vec '(:a :b :c)) (vector :a :b :c))))
-;
-;
+ ;; problem 6
+ (deftest can-intro-to-vectors
+   (is (= intro-to-vectors-solution (list :a :b :c) (vec '(:a :b :c)) (vector :a :b :c))))
+; は？
+
+
 ; ;; problem 7
 ; (deftest can-vectors-conj
 ;   (is (= vectors-conj-solution (conj [1 2 3] 4)))
