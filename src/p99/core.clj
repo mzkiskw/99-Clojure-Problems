@@ -176,9 +176,13 @@
 ;; problem 22 (Easy)
 ;; restrictions: count
 (defn count-a-sequence-solution
-  [& args] ;; update args as needed
+  [l]
   ;; Write a function which returns the total number of elements in a sequence.
-  nil)
+  (loop [l l n 0]
+    (if (empty? l)
+      n
+      (recur (rest l) (inc n)))
+    ))
 
 
 ;; problem 23 (Easy)
