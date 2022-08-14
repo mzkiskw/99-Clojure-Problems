@@ -141,9 +141,9 @@
 ;; problem 19 (Easy)
 ;; restrictions: last
 (defn last-element-solution
-  [& args] ;; update args as needed
+  [l] ;; update args as needed
   ;; Write a function which returns the last element in a sequence.
-  nil)
+  (last l))
 
 
 ;; problem 20 (Easy)

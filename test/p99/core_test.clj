@@ -112,13 +112,13 @@
    (is (= sequences-filter-solution (filter #(> % 5) '(3 4 5 6 7)))))
 
 
-; ;; problem 19
-; (deftest can-last-element
-;   (is (= (last-element-solution [1 2 3 4 5]) 5))
-;   (is (= (last-element-solution '(5 4 3)) 3))
-;   (is (= (last-element-solution ["b" "c" "d"]) "d")))
-;
-;
+ ;; problem 19
+ (deftest can-last-element
+   (is (= (last-element-solution [1 2 3 4 5]) 5))
+   (is (= (last-element-solution '(5 4 3)) 3))
+   (is (= (last-element-solution ["b" "c" "d"]) "d")))
+
+
 ; ;; problem 20
 ; (deftest can-penultimate-element
 ;   (is (= (penultimate-element-solution (list 1 2 3 4 5)) 4))
