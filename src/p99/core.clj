@@ -131,12 +131,11 @@
 
 
 ;; problem 18 (Elementary)
-(defn sequences-filter-solution
-  [& args] ;; update args as needed
+(def sequences-filter-solution
   ;; The filter function takes two arguments: a predicate function (f) and a
   ;; sequence (s). Filter returns a new sequence consisting of all the items of
   ;; s for which (f item) returns true.
-  nil)
+  '(6 7))
 
 
 ;; problem 19 (Easy)
