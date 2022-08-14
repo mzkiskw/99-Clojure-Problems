@@ -298,9 +298,14 @@
 ;; problem 34 (Easy)
 ;; restrictions: range
 (defn implement-range-solution
-  [& args] ;; update args as needed
+  [start end]
   ;; Write a function which creates a list of all integers in a given range.
-  nil)
+  (loop [i start ans []]
+    (if (= i end)
+      (reverse ans)
+      (recur (inc i) (cons i ans))
+      )
+    ))
 
 
 ;; problem 35 (Elementary)

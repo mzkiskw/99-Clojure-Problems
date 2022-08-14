@@ -230,13 +230,13 @@
 ;   (is (= (replicate-a-sequence-solution [44 33] 2) [44 44 33 33])))
 ;
 ;
-; ;; problem 34
-; (deftest can-implement-range
-;   (is (= (implement-range-solution 1 4) '(1 2 3)))
-;   (is (= (implement-range-solution -2 2) '(-2 -1 0 1)))
-;   (is (= (implement-range-solution 5 8) '(5 6 7))))
-;
-;
+ ;; problem 34
+ (deftest can-implement-range
+   (is (= (implement-range-solution 1 4) '(1 2 3)))
+   (is (= (implement-range-solution -2 2) '(-2 -1 0 1)))
+   (is (= (implement-range-solution 5 8) '(5 6 7))))
+
+
 ; ;; problem 35
 ; (deftest can-local-bindings
 ;   (is (= local-bindings-solution (let [x 5] (+ 2 x))))
