@@ -282,9 +282,9 @@
 
 ;; problem 32 (Easy)
 (defn duplicate-a-sequence-solution
-  [& args] ;; update args as needed
+  [v]
   ;; Write a function which duplicates each element of a sequence.
-  nil)
+  (mapcat #(seq [% %]) v))
 
 
 ;; problem 33 (Easy)

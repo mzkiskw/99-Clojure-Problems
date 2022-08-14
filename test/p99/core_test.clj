@@ -213,14 +213,14 @@
 ;   (is (= (pack-a-sequence-solution [[1 2] [1 2] [3 4]]) '(([1 2] [1 2]) ([3 4])))))
 ;
 ;
-; ;; problem 32
-; (deftest can-duplicate-a-sequence
-;   (is (= (duplicate-a-sequence-solution [1 2 3]) '(1 1 2 2 3 3)))
-;   (is (= (duplicate-a-sequence-solution [:a :a :b :b]) '(:a :a :a :a :b :b :b :b)))
-;   (is (= (duplicate-a-sequence-solution [[1 2] [3 4]]) '([1 2] [1 2] [3 4] [3 4])))
-;   (is (= (duplicate-a-sequence-solution [[1 2] [3 4]]) '([1 2] [1 2] [3 4] [3 4]))))
-;
-;
+ ;; problem 32
+ (deftest can-duplicate-a-sequence
+   (is (= (duplicate-a-sequence-solution [1 2 3]) '(1 1 2 2 3 3)))
+   (is (= (duplicate-a-sequence-solution [:a :a :b :b]) '(:a :a :a :a :b :b :b :b)))
+   (is (= (duplicate-a-sequence-solution [[1 2] [3 4]]) '([1 2] [1 2] [3 4] [3 4])))
+   (is (= (duplicate-a-sequence-solution [[1 2] [3 4]]) '([1 2] [1 2] [3 4] [3 4]))))
+
+
 ; ;; problem 33
 ; (deftest can-replicate-a-sequence
 ;   (is (= (replicate-a-sequence-solution [1 2 3] 2) '(1 1 2 2 3 3)))
