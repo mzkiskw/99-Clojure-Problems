@@ -119,13 +119,13 @@
    (is (= (last-element-solution ["b" "c" "d"]) "d")))
 
 
-; ;; problem 20
-; (deftest can-penultimate-element
-;   (is (= (penultimate-element-solution (list 1 2 3 4 5)) 4))
-;   (is (= (penultimate-element-solution ["a" "b" "c"]) "b"))
-;   (is (= (penultimate-element-solution [[1 2] [3 4]]) [1 2])))
-;
-;
+ ;; problem 20
+ (deftest can-penultimate-element
+   (is (= (penultimate-element-solution (list 1 2 3 4 5)) 4))
+   (is (= (penultimate-element-solution ["a" "b" "c"]) "b"))
+   (is (= (penultimate-element-solution [[1 2] [3 4]]) [1 2])))
+
+
 ; ;; problem 21
 ; (deftest can-nth-element
 ;   (is (= (nth-element-solution '(4 5 6 7) 2) 6))

@@ -148,9 +148,9 @@
 
 ;; problem 20 (Easy)
 (defn penultimate-element-solution
-  [& args] ;; update args as needed
+  [l]
   ;; Write a function which returns the second to last element from a sequence.
-  nil)
+  (nth l (- (count l) 2)))
 
 
 ;; problem 21 (Easy)
