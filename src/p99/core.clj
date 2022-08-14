@@ -143,7 +143,11 @@
 (defn last-element-solution
   [l] ;; update args as needed
   ;; Write a function which returns the last element in a sequence.
-  (last l))
+  (loop [l l]
+    (if (empty? (rest l))
+      (first l)
+      (recur (rest l)))
+    ))
 
 
 ;; problem 20 (Easy)
