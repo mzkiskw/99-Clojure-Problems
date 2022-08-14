@@ -16,11 +16,11 @@
    (is (= (- 10 (* 2 3)) simple-math-solution)))
 
 
-; ;; problem 3
-; (deftest can-intro-to-strings
-;   (is (= intro-to-strings-solution (.toUpperCase "hello world"))))
-;
-;
+ ;; problem 3
+ (deftest can-intro-to-strings
+   (is (= intro-to-strings-solution (.toUpperCase "hello world"))))
+
+
 ; ;; problem 4
 ; (deftest can-intro-to-lists
 ;   (is (= (list intro-to-lists-solution) '(:a :b :c))))

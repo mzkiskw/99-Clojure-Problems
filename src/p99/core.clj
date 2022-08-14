@@ -31,7 +31,7 @@
 (def intro-to-strings-solution
   ;; Clojure strings are Java strings. This means that you can use any of the
   ;; Java string methods on Clojure strings.
-  nil)
+  "HELLO WORLD")
 
 
 ;; problem 4 (Elementary)
