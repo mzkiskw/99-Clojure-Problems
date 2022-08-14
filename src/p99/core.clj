@@ -210,9 +210,17 @@
 
 ;; problem 25 (Easy)
 (defn find-the-odd-numbers-solution
-  [& args] ;; update args as needed
+  [l]
   ;; Write a function which returns only the odd numbers from a sequence.
-  nil)
+  (loop [l l ans []]
+    (if (< (count l) 1)
+      (reverse ans)
+      (if (odd? (first l))
+        (recur (rest l) (cons (first l) ans))
+        (recur (rest l) ans)
+        )
+      )
+    ))
 
 
 ;; problem 26 (Easy)

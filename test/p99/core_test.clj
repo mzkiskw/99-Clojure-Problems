@@ -159,14 +159,14 @@
    (is (= (sum-it-all-up-solution '(1 10 3)) 14)))
 
 
-; ;; problem 25
-; (deftest can-find-the-odd-numbers
-;   (is (= (find-the-odd-numbers-solution #{1 2 3 4 5}) '(1 3 5)))
-;   (is (= (find-the-odd-numbers-solution [4 2 1 6]) '(1)))
-;   (is (= (find-the-odd-numbers-solution [2 2 4 6]) '()))
-;   (is (= (find-the-odd-numbers-solution [1 1 1 3]) '(1 1 1 3))))
-;
-;
+ ;; problem 25
+ (deftest can-find-the-odd-numbers
+   (is (= (find-the-odd-numbers-solution #{1 2 3 4 5}) '(1 3 5)))
+   (is (= (find-the-odd-numbers-solution [4 2 1 6]) '(1)))
+   (is (= (find-the-odd-numbers-solution [2 2 4 6]) '()))
+   (is (= (find-the-odd-numbers-solution [1 1 1 3]) '(1 1 1 3))))
+
+
 ; ;; problem 26
 ; (deftest can-fibonacci-sequence
 ;   (is (= (fibonacci-sequence-solution 3) '(1 1 2)))
