@@ -260,10 +260,10 @@
 
 ;; problem 29 (Easy)
 (defn get-the-caps-solution
-  [& args] ;; update args as needed
+  [v]
   ;; Write a function which takes a string and returns a new string containing
   ;; only the capital letters.
-  nil)
+  (apply str (filter #(Character/isUpperCase %) (seq v))))
 
 
 ;; problem 30 (Easy)

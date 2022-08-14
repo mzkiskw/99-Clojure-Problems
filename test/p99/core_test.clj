@@ -192,13 +192,13 @@
 ;   (is (= (flatten-a-sequence-solution '((((:a))))) '(:a))))
 ;
 ;
-; ;; problem 29
-; (deftest can-get-the-caps
-;   (is (= (get-the-caps-solution "HeLlO, WoRlD!") "HLOWRD"))
-;   (is (empty? (get-the-caps-solution "nothing")))
-;   (is (= (get-the-caps-solution "$#A(*&987Zf") "AZ")))
-;
-;
+ ;; problem 29
+ (deftest can-get-the-caps
+   (is (= (get-the-caps-solution "HeLlO, WoRlD!") "HLOWRD"))
+   (is (empty? (get-the-caps-solution "nothing")))
+   (is (= (get-the-caps-solution "$#A(*&987Zf") "AZ")))
+
+
 ; ;; problem 30
 ; (deftest can-compress-a-sequence
 ;   (is (= (apply str (compress-a-sequence-solution "Leeeeeerrroyyy")) "Leroy"))
