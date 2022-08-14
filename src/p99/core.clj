@@ -70,7 +70,7 @@
 (def sets-conj-solution
   ;; When operating on a set, the conj function returns a new set with one or
   ;; more keys "added".
-  nil)
+  2)
 
 
 ;; problem 10 (Elementary)

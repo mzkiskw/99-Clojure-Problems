@@ -51,11 +51,11 @@
    (is (= intro-to-sets-solution (clojure.set/union #{:a :b :c} #{:b :c :d}))))
 
 
-; ;; problem 9
-; (deftest can-sets-conj
-;   (is (= #{1 2 3 4} (conj #{1 4 3} sets-conj-solution))))
-;
-;
+ ;; problem 9
+ (deftest can-sets-conj
+   (is (= #{1 2 3 4} (conj #{1 4 3} sets-conj-solution))))
+
+
 ; ;; problem 10
 ; (deftest can-intro-to-maps
 ;   (is (= intro-to-maps-solution ((hash-map :a 10, :b 20, :c 30) :b)))
