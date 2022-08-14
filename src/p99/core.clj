@@ -193,7 +193,7 @@
   (loop [l l ans []]
     (if (< (count l) 1)
       ans
-      (recur (drop 1 l) (cons (first l) ans)))
+      (recur (rest l) (cons (first l) ans)))
     ))
 
 
