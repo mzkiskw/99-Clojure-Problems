@@ -105,7 +105,7 @@
 ;; problem 14 (Elementary)
 (def intro-to-functions-solution
   ;; Clojure has many different ways to create functions.
-  nil)
+  8)
 
 
 ;; problem 15 (Elementary)

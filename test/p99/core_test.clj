@@ -79,14 +79,14 @@
    (is (= sequences-rest-solution (rest [10 20 30 40]))))
 
 
-; ;; problem 14
-; (deftest can-intro-to-functions
-;   (is (= intro-to-functions-solution ((fn add-five [x] (+ x 5)) 3)))
-;   (is (= intro-to-functions-solution ((fn [x] (+ x 5)) 3)))
-;   (is (= intro-to-functions-solution (#(+ % 5) 3)))
-;   (is (= intro-to-functions-solution ((partial + 5) 3))))
-;
-;
+ ;; problem 14
+ (deftest can-intro-to-functions
+   (is (= intro-to-functions-solution ((fn add-five [x] (+ x 5)) 3)))
+   (is (= intro-to-functions-solution ((fn [x] (+ x 5)) 3)))
+   (is (= intro-to-functions-solution (#(+ % 5) 3)))
+   (is (= intro-to-functions-solution ((partial + 5) 3))))
+
+
 ; ;; problem 15
 ; (deftest can-double-down
 ;   (is (= (double-down-solution 2) 4))
