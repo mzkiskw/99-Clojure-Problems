@@ -188,9 +188,13 @@
 ;; problem 23 (Easy)
 ;; restrictions: reverse, rseq
 (defn reverse-a-sequence-solution
-  [& args] ;; update args as needed
+  [l]
   ;; Write a function which reverses a sequence.
-  nil)
+  (loop [l l ans []]
+    (if (< (count l) 1)
+      ans
+      (recur (drop 1 l) (cons (first l) ans)))
+    ))
 
 
 ;; problem 24 (Easy)
