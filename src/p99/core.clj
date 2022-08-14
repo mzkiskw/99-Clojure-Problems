@@ -92,7 +92,7 @@
 (def intro-to-sequences-solution
   ;; All Clojure collections support sequencing. You can operate on sequences
   ;; with functions like first, second, and last.
-  nil)
+  3)
 
 
 ;; problem 13 (Elementary)
