@@ -176,15 +176,15 @@
    (is (= (fibonacci-sequence-solution 8) '(1 1 2 3 5 8 13 21))))
 
 
-; ;; problem 27
-; (deftest can-palindrome-detector
-;   (is (false? (palindrome-detector-solution '(1 2 3 4 5))))
-;   (is (true? (palindrome-detector-solution "racecar")))
-;   (is (true? (palindrome-detector-solution [:foo :bar :foo])))
-;   (is (true? (palindrome-detector-solution '(1 1 3 3 1 1))))
-;   (is (false? (palindrome-detector-solution '(:a :b :c)))))
-;
-;
+ ;; problem 27
+ (deftest can-palindrome-detector
+   (is (false? (palindrome-detector-solution '(1 2 3 4 5))))
+   (is (true? (palindrome-detector-solution "racecar")))
+   (is (true? (palindrome-detector-solution [:foo :bar :foo])))
+   (is (true? (palindrome-detector-solution '(1 1 3 3 1 1))))
+   (is (false? (palindrome-detector-solution '(:a :b :c)))))
+
+
 ; ;; problem 28
 ; (deftest can-flatten-a-sequence
 ;   (is (= (flatten-a-sequence-solution '((1 2) 3 [4 [5 6]])) '(1 2 3 4 5 6)))

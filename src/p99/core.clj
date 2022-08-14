@@ -243,11 +243,11 @@
 
 ;; problem 27 (Easy)
 (defn palindrome-detector-solution
-  [& args] ;; update args as needed
+  [v]
   ;; Write a function which returns true if the given sequence is a palindrome.
   ;;
   ;; Hint: "racecar" does not equal '(\r \a \c \e \c \a \r)
-  nil)
+  (= (reverse v) (seq v)))
 
 
 ;; problem 28 (Easy)
