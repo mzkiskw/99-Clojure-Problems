@@ -225,9 +225,20 @@
 
 ;; problem 26 (Easy)
 (defn fibonacci-sequence-solution
-  [& args] ;; update args as needed
+  [n]
   ;; Write a function which returns the first X fibonacci numbers.
-  nil)
+  (cond
+    (= n 0) []
+    (= n 1) [1]
+    (= n 2) [1 1]
+    :else (loop [n (- n 2) a0 1 a1 1 ans [1 1]]
+            (if (< n 1)
+              (reverse ans)
+              (recur (dec n) a1 (+ a0 a1) (cons (+ a0 a1) ans))
+              )
+            )
+    )
+  )
 
 
 ;; problem 27 (Easy)

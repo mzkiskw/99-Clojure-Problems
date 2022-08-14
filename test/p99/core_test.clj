@@ -167,13 +167,15 @@
    (is (= (find-the-odd-numbers-solution [1 1 1 3]) '(1 1 1 3))))
 
 
-; ;; problem 26
-; (deftest can-fibonacci-sequence
-;   (is (= (fibonacci-sequence-solution 3) '(1 1 2)))
-;   (is (= (fibonacci-sequence-solution 6) '(1 1 2 3 5 8)))
-;   (is (= (fibonacci-sequence-solution 8) '(1 1 2 3 5 8 13 21))))
-;
-;
+ ;; problem 26
+ (deftest can-fibonacci-sequence
+   (is (= (fibonacci-sequence-solution 0) '()))
+   (is (= (fibonacci-sequence-solution 1) '(1)))
+   (is (= (fibonacci-sequence-solution 2) '(1 1)))
+   (is (= (fibonacci-sequence-solution 6) '(1 1 2 3 5 8)))
+   (is (= (fibonacci-sequence-solution 8) '(1 1 2 3 5 8 13 21))))
+
+
 ; ;; problem 27
 ; (deftest can-palindrome-detector
 ;   (is (false? (palindrome-detector-solution '(1 2 3 4 5))))
