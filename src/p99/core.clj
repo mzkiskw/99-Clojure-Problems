@@ -166,7 +166,11 @@
 (defn nth-element-solution
   [l i]
   ;; Write a function which returns the Nth element from a sequence.
-  (nth l i))
+  (loop [l l i i]
+    (if (= i 0)
+      (first l)
+      (recur (rest l) (dec i)))
+    ))
 
 
 ;; problem 22 (Easy)
