@@ -62,11 +62,11 @@
    (is (= intro-to-maps-solution (:b {:a 10, :b 20, :c 30}))))
 
 
-; ;; problem 11
-; (deftest can-maps-conj
-;   (is (= {:a 1, :b 2, :c 3} (conj {:a 1} maps-conj-solution [:c 3]))))
-;
-;
+ ;; problem 11
+ (deftest can-maps-conj
+   (is (= {:a 1, :b 2, :c 3} (conj {:a 1} maps-conj-solution [:c 3]))))
+
+
 ; ;; problem 12
 ; (deftest can-intro-to-sequences
 ;   (is (= intro-to-sequences-solution (first '(3 2 1))))

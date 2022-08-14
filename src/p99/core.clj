@@ -85,7 +85,7 @@
 (def maps-conj-solution
   ;; When operating on a map, the conj function returns a new map with one or
   ;; more key-value pairs "added".
-  nil)
+  {:b 2})
 
 
 ;; problem 12 (Elementary)
