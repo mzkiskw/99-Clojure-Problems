@@ -126,14 +126,14 @@
    (is (= (penultimate-element-solution [[1 2] [3 4]]) [1 2])))
 
 
-; ;; problem 21
-; (deftest can-nth-element
-;   (is (= (nth-element-solution '(4 5 6 7) 2) 6))
-;   (is (= (nth-element-solution [:a :b :c] 0) :a))
-;   (is (= (nth-element-solution [1 2 3 4] 1) 2))
-;   (is (= (nth-element-solution '([1 2] [3 4] [5 6]) 2) [5 6])))
-;
-;
+ ;; problem 21
+ (deftest can-nth-element
+   (is (= (nth-element-solution '(4 5 6 7) 2) 6))
+   (is (= (nth-element-solution [:a :b :c] 0) :a))
+   (is (= (nth-element-solution [1 2 3 4] 1) 2))
+   (is (= (nth-element-solution '([1 2] [3 4] [5 6]) 2) [5 6])))
+
+
 ; ;; problem 22
 ; (deftest can-count-a-sequence
 ;   (is (= (count-a-sequence-solution '(1 2 3 3 1)) 5))

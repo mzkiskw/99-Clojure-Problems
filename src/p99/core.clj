@@ -156,9 +156,9 @@
 ;; problem 21 (Easy)
 ;; restrictions: nth
 (defn nth-element-solution
-  [& args] ;; update args as needed
+  [l i]
   ;; Write a function which returns the Nth element from a sequence.
-  nil)
+  (nth l i))
 
 
 ;; problem 22 (Easy)
