@@ -154,7 +154,11 @@
 (defn penultimate-element-solution
   [l]
   ;; Write a function which returns the second to last element from a sequence.
-  (nth l (- (count l) 2)))
+  (loop [l l]
+    (if (empty? (rest (rest l)))
+      (first l)
+      (recur (rest l)))
+    ))
 
 
 ;; problem 21 (Easy)
