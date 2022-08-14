@@ -57,7 +57,7 @@
 (def vectors-conj-solution
   ;; When operating on a Vector, the conj function will return a new vector
   ;; with one or more items "added" to the end.
-  nil)
+  [1 2 3 4])
 
 
 ;; problem 8 (Elementary)
