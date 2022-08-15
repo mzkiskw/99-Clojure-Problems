@@ -459,14 +459,14 @@
 ;   (is (= [:map :set :vector :list] (map black-box-testing-solution [{} #{} [] ()]))))
 ;
 ;
-; ;; problem 66
-; (deftest can-greatest-common-divisor
-;   (is (= (greatest-common-divisor-solution 2 4) 2))
-;   (is (= (greatest-common-divisor-solution 10 5) 5))
-;   (is (= (greatest-common-divisor-solution 5 7) 1))
-;   (is (= (greatest-common-divisor-solution 1023 858) 33)))
-;
-;
+ ;; problem 66
+ (deftest can-greatest-common-divisor
+   (is (= (greatest-common-divisor-solution 2 4) 2))
+   (is (= (greatest-common-divisor-solution 10 5) 5))
+   (is (= (greatest-common-divisor-solution 5 7) 1))
+   (is (= (greatest-common-divisor-solution 1023 858) 33)))
+
+
 ; ;; problem 67
 ; (deftest can-prime-numbers
 ;   (is (= (prime-numbers-solution 2) [2 3]))

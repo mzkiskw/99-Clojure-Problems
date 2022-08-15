@@ -606,10 +606,16 @@
 
 ;; problem 66 (Easy)
 (defn greatest-common-divisor-solution
-  [& args] ;; update args as needed
+  [x y] ;; update args as needed
   ;; Given two integers, write a function which returns the greatest common
   ;; divisor.
-  nil)
+  (let [n (min x y)]
+    (loop [n n]
+      (if (and (= (rem x n) 0) (= (rem y n) 0))
+        n
+        (recur (dec n)))
+    )
+  ))
 
 
 ;; problem 67 (Medium)
