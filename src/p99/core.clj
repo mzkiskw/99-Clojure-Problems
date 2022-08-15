@@ -379,9 +379,13 @@
 
 ;; problem 42 (Easy)
 (defn factorial-fun-solution
-  [& args] ;; update args as needed
+  [n] ;; update args as needed
   ;; Write a function which calculates factorials.
-  nil)
+  (if (= n 0)
+    1
+    (* n (factorial-fun-solution (dec n)))
+    )
+  )
 
 
 ;; problem 43 (Medium)

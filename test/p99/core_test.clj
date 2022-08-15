@@ -287,14 +287,15 @@
    (is (= (drop-every-nth-item-solution [1 2 3 4 5 6] 4) [1 2 3 5 6])))
 
 
-; ;; problem 42
-; (deftest can-factorial-fun
-;   (is (= (factorial-fun-solution 1) 1))
-;   (is (= (factorial-fun-solution 3) 6))
-;   (is (= (factorial-fun-solution 5) 120))
-;   (is (= (factorial-fun-solution 8) 40320)))
-;
-;
+ ;; problem 42
+ (deftest can-factorial-fun
+   (is (= (factorial-fun-solution 0) 1))
+   (is (= (factorial-fun-solution 1) 1))
+   (is (= (factorial-fun-solution 3) 6))
+   (is (= (factorial-fun-solution 5) 120))
+   (is (= (factorial-fun-solution 8) 40320)))
+
+
 ; ;; problem 43
 ; (deftest can-reverse-interleave
 ;   (is (= (reverse-interleave-solution [1 2 3 4 5 6] 2) '((1 3 5) (2 4 6))))
