@@ -280,13 +280,13 @@
 ;   (is (= (interpose-a-seq-solution :z [:a :b :c :d]) [:a :z :b :z :c :z :d])))
 ;
 ;
-; ;; problem 41
-; (deftest can-drop-every-nth-item
-;   (is (= (drop-every-nth-item-solution [1 2 3 4 5 6 7 8] 3) [1 2 4 5 7 8]))
-;   (is (= (drop-every-nth-item-solution [:a :b :c :d :e :f] 2) [:a :c :e]))
-;   (is (= (drop-every-nth-item-solution [1 2 3 4 5 6] 4) [1 2 3 5 6])))
-;
-;
+ ;; problem 41
+ (deftest can-drop-every-nth-item
+   (is (= (drop-every-nth-item-solution [1 2 3 4 5 6 7 8] 3) [1 2 4 5 7 8]))
+   (is (= (drop-every-nth-item-solution [:a :b :c :d :e :f] 2) [:a :c :e]))
+   (is (= (drop-every-nth-item-solution [1 2 3 4 5 6] 4) [1 2 3 5 6])))
+
+
 ; ;; problem 42
 ; (deftest can-factorial-fun
 ;   (is (= (factorial-fun-solution 1) 1))

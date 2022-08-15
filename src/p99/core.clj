@@ -364,9 +364,17 @@
 
 ;; problem 41 (Easy)
 (defn drop-every-nth-item-solution
-  [& args] ;; update args as needed
+  [l n] ;; update args as needed
   ;; Write a function which drops every Nth item from a sequence.
-  nil)
+  (loop [l l i 1 ans []]
+    (if (= (count l) 0)
+      (reverse ans)
+      (if (= (rem i n) 0)
+        (recur (rest l) (inc i) ans)
+        (recur (rest l) (inc i) (cons (first l) ans))
+        )
+      )
+    ))
 
 
 ;; problem 42 (Easy)
