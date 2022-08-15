@@ -331,10 +331,17 @@
 ;; problem 38 (Easy)
 ;; restrictions: max, max-key
 (defn maximum-value-solution
-  [& args] ;; update args as needed
+  [& args]
   ;; Write a function which takes a variable number of parameters and returns
   ;; the maximum value.
-  nil)
+  (if (= (count args) 0)
+    nil
+    (loop [args args ans -10000000]
+      (if (= (count args) 0)
+        ans
+        (recur (rest args) (if (>= (first args) ans) (first args) ans))
+        )
+      )))
 
 
 ;; problem 39 (Easy)

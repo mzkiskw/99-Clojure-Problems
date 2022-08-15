@@ -256,13 +256,15 @@
 ;   (is (= regular-expressions-solution (apply str (re-seq #"[A-Z]+" "bA1B3Ce ")))))
 ;
 ;
-; ;; problem 38
-; (deftest can-maximum-value
-;   (is (= (maximum-value-solution 1 8 3 4) 8))
-;   (is (= (maximum-value-solution 30 20) 30))
-;   (is (= (maximum-value-solution 45 67 11) 67)))
-;
-;
+ ;; problem 38
+ (deftest can-maximum-value
+   (is (= (maximum-value-solution) nil))
+   (is (= (maximum-value-solution -1000 -8 -3 -4) -3))
+   (is (= (maximum-value-solution 1 8 3 4) 8))
+   (is (= (maximum-value-solution 30 20) 30))
+   (is (= (maximum-value-solution 45 67 11) 67)))
+
+
 ; ;; problem 39
 ; (deftest can-interleave-two-seqs
 ;   (is (= (interleave-two-seqs-solution [1 2 3] [:a :b :c]) '(1 :a 2 :b 3 :c)))
