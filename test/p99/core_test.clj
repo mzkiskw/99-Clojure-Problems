@@ -303,15 +303,15 @@
 ;   (is (= (reverse-interleave-solution (range 10) 5) '((0 5) (1 6) (2 7) (3 8) (4 9)))))
 ;
 ;
-; ;; problem 44
-; (deftest can-rotate-sequence
-;   (is (= (rotate-sequence-solution 2 [1 2 3 4 5]) '(3 4 5 1 2)))
-;   (is (= (rotate-sequence-solution -2 [1 2 3 4 5]) '(4 5 1 2 3)))
-;   (is (= (rotate-sequence-solution 6 [1 2 3 4 5]) '(2 3 4 5 1)))
-;   (is (= (rotate-sequence-solution 1 '(:a :b :c)) '(:b :c :a)))
-;   (is (= (rotate-sequence-solution -4 '(:a :b :c)) '(:c :a :b))))
-;
-;
+ ;; problem 44
+ (deftest can-rotate-sequence
+   (is (= (rotate-sequence-solution 2 [1 2 3 4 5]) '(3 4 5 1 2)))
+   (is (= (rotate-sequence-solution -2 [1 2 3 4 5]) '(4 5 1 2 3)))
+   (is (= (rotate-sequence-solution 6 [1 2 3 4 5]) '(2 3 4 5 1)))
+   (is (= (rotate-sequence-solution 1 '(:a :b :c)) '(:b :c :a)))
+   (is (= (rotate-sequence-solution -4 '(:a :b :c)) '(:c :a :b))))
+
+
 ; ;; problem 45
 ; (deftest can-intro-to-iterate
 ;   (is (= intro-to-iterate-solution (take 5 (iterate #(+ 3 %) 1)))))

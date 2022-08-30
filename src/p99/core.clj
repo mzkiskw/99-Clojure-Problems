@@ -398,9 +398,18 @@
 
 ;; problem 44 (Medium)
 (defn rotate-sequence-solution
-  [& args] ;; update args as needed
-  ;; Write a function which can rotate a sequence in either direction.
-  nil)
+  [begin vec] ;; update args as needed
+  (let [
+        si (mod begin (count vec))
+        vl (count vec)
+        ]
+    (loop [i si c 0 ans []]
+      (if (= c vl)
+        ans
+        (recur (mod (inc i) vl) (inc c) (conj ans (nth vec i)))
+        )
+      )
+  ))
 
 
 ;; problem 45 (Easy)
