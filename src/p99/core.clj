@@ -421,10 +421,11 @@
 
 ;; problem 46 (Medium)
 (defn flipping-out-solution
-  [& args] ;; update args as needed
+  [f] ;; update args as needed
   ;; Write a higher-order function which flips the order of the arguments of an
   ;; input function.
-  nil)
+  (fn [x y]
+    (f y x)))
 
 
 ;; problem 47 (Easy)

@@ -317,14 +317,14 @@
 ;   (is (= intro-to-iterate-solution (take 5 (iterate #(+ 3 %) 1)))))
 ;
 ;
-; ;; problem 46
-; (deftest can-flipping-out
-;   (is (= 3 ((flipping-out-solution nth) 2 [1 2 3 4 5])))
-;   (is (= true ((flipping-out-solution >) 7 8)))
-;   (is (= 4 ((flipping-out-solution quot) 2 8)))
-;   (is (= [1 2 3] ((flipping-out-solution take) [1 2 3 4 5] 3))))
-;
-;
+ ;; problem 46
+ (deftest can-flipping-out
+   (is (= 3 ((flipping-out-solution nth) 2 [1 2 3 4 5])))
+   (is (= true ((flipping-out-solution >) 7 8)))
+   (is (= 4 ((flipping-out-solution quot) 2 8)))
+   (is (= [1 2 3] ((flipping-out-solution take) [1 2 3 4 5] 3))))
+
+
 ; ;; problem 47
 ; (deftest can-contain-yourself
 ;   (is (contains? #{4 5 6} contain-yourself-solution))
