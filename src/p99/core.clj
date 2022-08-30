@@ -268,9 +268,17 @@
 
 ;; problem 30 (Easy)
 (defn compress-a-sequence-solution
-  [& args] ;; update args as needed
+  [v] ;; update args as needed
   ;; Write a function which removes consecutive duplicates from a sequence.
-  nil)
+  (loop [prev nil v v ans []]
+    (if (empty? v)
+      ans
+      (if (= prev (first v))
+        (recur prev (rest v) ans)
+        (recur (first v) (rest v) (conj ans (first v)))
+        )
+      )
+    ))
 
 
 ;; problem 31 (Easy)

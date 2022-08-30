@@ -199,13 +199,13 @@
    (is (= (get-the-caps-solution "$#A(*&987Zf") "AZ")))
 
 
-; ;; problem 30
-; (deftest can-compress-a-sequence
-;   (is (= (apply str (compress-a-sequence-solution "Leeeeeerrroyyy")) "Leroy"))
-;   (is (= (compress-a-sequence-solution [1 1 2 3 3 2 2 3]) '(1 2 3 2 3)))
-;   (is (= (compress-a-sequence-solution [[1 2] [1 2] [3 4] [1 2]]) '([1 2] [3 4] [1 2]))))
-;
-;
+ ;; problem 30
+ (deftest can-compress-a-sequence
+   (is (= (apply str (compress-a-sequence-solution "Leeeeeerrroyyy")) "Leroy"))
+   (is (= (compress-a-sequence-solution [1 1 2 3 3 2 2 3]) '(1 2 3 2 3)))
+   (is (= (compress-a-sequence-solution [[1 2] [1 2] [3 4] [1 2]]) '([1 2] [3 4] [1 2]))))
+
+
 ; ;; problem 31
 ; (deftest can-pack-a-sequence
 ;   (is (= (pack-a-sequence-solution [1 1 2 1 1 1 3 3]) '((1 1) (2) (1 1 1) (3 3))))
