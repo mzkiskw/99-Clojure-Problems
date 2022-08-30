@@ -420,13 +420,13 @@
 ;   (is (= (last (sequence-reductions-solution * 2 [3 4 5])) (reduce * 2 [3 4 5]) 120)))
 ;
 ;
-; ;; problem 61
-; (deftest can-map-construction
-;   (is (= (map-construction-solution [:a :b :c] [1 2 3]) {:a 1, :b 2, :c 3}))
-;   (is (= (map-construction-solution [1 2 3 4] ["one" "two" "three"]) {1 "one", 2 "two", 3 "three"}))
-;   (is (= (map-construction-solution [:foo :bar] ["foo" "bar" "baz"]) {:foo "foo", :bar "bar"})))
-;
-;
+ ;; problem 61
+ (deftest can-map-construction
+   (is (= (map-construction-solution [:a :b :c] [1 2 3]) {:a 1, :b 2, :c 3}))
+   (is (= (map-construction-solution [1 2 3 4] ["one" "two" "three"]) {1 "one", 2 "two", 3 "three"}))
+   (is (= (map-construction-solution [:foo :bar] ["foo" "bar" "baz"]) {:foo "foo", :bar "bar"})))
+
+
 ; ;; problem 62
 ; (deftest can-re-implement-iterate
 ;   (is (= (take 5 (re-implement-iterate-solution #(* 2 %) 1)) [1 2 4 8 16]))

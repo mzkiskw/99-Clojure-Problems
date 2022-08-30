@@ -557,10 +557,16 @@
 ;; problem 61 (Easy)
 ;; restrictions: zipmap
 (defn map-construction-solution
-  [& args] ;; update args as needed
+  [v1 v2] ;; update args as needed
   ;; Write a function which takes a vector of keys and a vector of values and
   ;; constructs a map from them.
-  nil)
+  (count v1)
+  (loop [a v1 b v2 ans {}]
+    (if (or (empty? a) (empty? b))
+      ans
+      (recur (rest a) (rest b) (assoc ans (first a) (first b)))
+      )
+    ))
 
 
 ;; problem 62 (Easy)
